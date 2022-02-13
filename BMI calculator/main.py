@@ -1,6 +1,6 @@
 print("BMI calculator")
 weight = int(input("Enter your weight in kg: "))
-heigt = float(input("Enter your height in cm: "))
+heigt = float(input("Enter your height in m: "))
 
 result = weight / heigt**2
 

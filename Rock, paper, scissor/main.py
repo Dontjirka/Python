@@ -1,7 +1,7 @@
 import random as rand
 
 print("Rock, paper, scissor game.")
-player = str(input("Enter R for (Rock), P for (Paper) or S for (scissor): "))
+player = str(input("Enter R/r for (Rock), P/p for (Paper) or S/s for (scissor): ")).upper()
 game = ["Rock", "Paper", "Scissor"]
 computer = str(rand.choices(game))
 

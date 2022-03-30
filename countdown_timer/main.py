@@ -11,11 +11,11 @@ def clear():
         _ = system('clear')
 
 def countdown():
-    Time = int(input("Enter: "))
+    Time = int(input("Enter seconds: "))
     timing = True
     while timing is not False:
         for i in range(Time+1):
-            print(f"Remaining time is {Time}")
+            print(f"Remaining time is {Time}s")
             Time -= 1
             time.sleep(1)
             clear()

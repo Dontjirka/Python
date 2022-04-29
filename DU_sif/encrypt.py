@@ -1,5 +1,5 @@
 # Encrypting a simple file with symmetric encryption
-def encrypt():
+def encrypt(mysecretdata):
 
     from cryptography.fernet import Fernet
     # Generating a random key

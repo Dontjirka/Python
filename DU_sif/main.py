@@ -5,6 +5,8 @@ from decrypt import decrypt
 from encrypt_symm_key import encrypt_symm_key
 from encrypt import encrypt
 from hash_message import hash_message
+import message
+import mysecretdata
 
 create_keys()
 decrypt(message)

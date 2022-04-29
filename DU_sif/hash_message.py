@@ -2,7 +2,7 @@
 # verifies the signature with the owners public key
 import rsa
 
-def hash_message():
+def hash_message(message):
 
     # Open key file and return key data
     def file_open(file):

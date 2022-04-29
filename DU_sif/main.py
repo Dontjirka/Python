@@ -10,6 +10,6 @@ import mysecretdata
 
 create_keys()
 decrypt(message)
-encrypt_symm_key()
+encrypt_symm_key(message)
 encrypt(mysecretdata)
 hash_message(message)

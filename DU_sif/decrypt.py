@@ -1,6 +1,6 @@
 import rsa
 
-def decrypt():
+def decrypt(message):
     # Open key file and return key data
     def file_open(file):
         key_file = open(file, 'rb')

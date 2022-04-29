@@ -9,5 +9,5 @@ from hash_message import hash_message
 create_keys()
 decrypt()
 encrypt_symm_key()
-encrypt()
-hash_message()
+encrypt(mysecretdata)
+hash_message(message)

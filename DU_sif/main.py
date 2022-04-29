@@ -7,7 +7,7 @@ from encrypt import encrypt
 from hash_message import hash_message
 
 create_keys()
-decrypt()
+decrypt(message)
 encrypt_symm_key()
 encrypt(mysecretdata)
 hash_message(message)

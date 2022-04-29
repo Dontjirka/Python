@@ -1,6 +1,6 @@
 import rsa
 
-def encrypt_symm_key():
+def encrypt_symm_key(message):
     # Open key file and return key data
     def file_open(file):
         key_file = open(file, 'rb')

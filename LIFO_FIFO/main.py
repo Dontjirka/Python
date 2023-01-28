@@ -1,4 +1,3 @@
-#jelikoz python nema interfaces tak pouzivam misto toho Absctract Base Class (ABC)
 from abc import ABC, abstractmethod
 
 class Pushable(ABC):

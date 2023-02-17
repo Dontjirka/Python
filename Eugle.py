@@ -14,25 +14,20 @@ def isEugle(g):
             if idk == 3:
                 return False
     return True
+    
 
-print("Enter nums: ")
+print("Enter nums, seperate them by ',' and press 'ENTER' if you want to end one array, press '.' to end it all: ")
 g = []
-nums = input()
-running = True
-
-'''
-while running:
-    g.append(nums)
-    if nums == ".":
-        running = False
-'''
-if nums:
+while True:
+    row = input().strip()
+    if row == ".":
+        break
+    row_nums = row.split(",")
     try:
-        int(nums)
+        row_nums = [int(num) for num in row_nums]
     except ValueError:
-        print("Please enter a number")
+        print("Please enter integers only")
         sys.exit()
+    g.append(row_nums)
 
-else:
-    print("write something you stupido")
-    sys.exit()
+print(f"It is Eugle: {isEugle(g)}")

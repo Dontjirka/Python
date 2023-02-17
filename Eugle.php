@@ -1,16 +1,14 @@
 <?php
 
-function isEugle()
-{
-    $g = [[0,1,6,0],[0,0,9,1],[7,7,6,7],[1,0,0,0]];
-    $h = [];
-    $e = [];
+function isEugle($g) {
+    $h = array();
+    $e = array();
     $idk = 0;
     foreach ($g as $i) {
-        $h[] = array_sum($i);
+        array_push($h, array_sum($i));
     }
     foreach ($h as $j) {
-        $e[] = $j % 2;
+        array_push($e, $j % 2);
     }
     foreach ($e as $k) {
         if ($k == 1) {
@@ -23,6 +21,23 @@ function isEugle()
     return true;
 }
 
-echo isEugle();
+echo "Enter nums: \n";
+$g = array();
+while (true) {
+    $row = trim(fgets(STDIN));
+    if ($row == ".") {
+        break;
+    }
+    $row_nums = explode(",", $row);
+    foreach ($row_nums as $num) {
+        if (!is_numeric($num)) {
+            echo "Please enter integers only\n";
+            exit();
+        }
+    }
+    array_push($g, $row_nums);
+}
+
+echo "It is Eugle: " . var_export(isEugle($g), true) . "\n";
 
 ?>

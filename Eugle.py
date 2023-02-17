@@ -22,9 +22,10 @@ running = True
 
 '''
 while running:
-
+    g.append(nums)
+    if nums == ".":
+        running = False
 '''
-
 if nums:
     try:
         int(nums)
@@ -35,4 +36,3 @@ if nums:
 else:
     print("write something you stupido")
     sys.exit()
-print("k")

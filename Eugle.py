@@ -18,6 +18,9 @@ def isEugle(g):
 #######################################################
 
 #######################################################
+S = input("Frow which knot do you want to start: ") #Start
+D = input("Which knot is the destination: ") #Destination
+
 def pathExists():
     return
 #######################################################
